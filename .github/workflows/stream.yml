@@ -49,27 +49,27 @@ jobs:
 #   workflow_dispatch:  # Matlab: Hum button dabayenge tab chalega
 
 # jobs:
-  run-stream:
-    runs-on: ubuntu-latest
-    timeout-minutes: 360 # 6 Ghante baad ruk jayega
+#   run-stream:
+#     runs-on: ubuntu-latest
+#     timeout-minutes: 360 # 6 Ghante baad ruk jayega
 
-    steps:
-    # 1. Hamara Code uthao
-    - name: Checkout Code
-      uses: actions/checkout@v3
+#     steps:
+#     # 1. Hamara Code uthao
+#     - name: Checkout Code
+#       uses: actions/checkout@v3
 
-    # 2. Chrome aur FFmpeg install karo
-    - name: Install System Tools
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y ffmpeg google-chrome-stable
+#     # 2. Chrome aur FFmpeg install karo
+#     - name: Install System Tools
+#       run: |
+#         sudo apt-get update
+#         sudo apt-get install -y ffmpeg google-chrome-stable
 
-    # 3. Python Libraries install karo
-    - name: Install Python Requirements
-      run: |
-        pip install selenium selenium-wire webdriver-manager blinker==1.7.0 "setuptools<70"
+#     # 3. Python Libraries install karo
+#     - name: Install Python Requirements
+#       run: |
+#         pip install selenium selenium-wire webdriver-manager blinker==1.7.0 "setuptools<70"
 
-    # 4. Hamara Final Bot chalao
-    - name: Start The Bot
+#     # 4. Hamara Final Bot chalao
+#     - name: Start The Bot
       # run: python final_bot.py
-      run: python -u final_bot.py
+      # run: python -u final_bot.py
