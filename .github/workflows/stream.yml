@@ -26,4 +26,5 @@ jobs:
 
     # 4. Hamara Final Bot chalao
     - name: Start The Bot
-      run: python final_bot.py
+      # run: python final_bot.py
+      run: python -u final_bot.py
